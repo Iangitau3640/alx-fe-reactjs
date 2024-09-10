@@ -2,12 +2,21 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import UserProfile from './components/UserProfile';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+  <div>
+      <UserProfile />
+    </div>
+
+      <div className="p-6 bg-blue-500 text-white">
+      Hello, Tailwind CSS with React!
+      happy to work with Tailwindcss
+    </div>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
